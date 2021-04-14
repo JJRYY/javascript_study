@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	document.write("<h2>재귀함수 이용하여 1~10</h2>");	
+	var num = 0;
+	function testFnc(){
+		num++;
+		document.write(num, "<br>");
+		if(num==10) return;
+		
+		testFnc();
+	}
+	testFnc();
+	
+	document.write("<h2>재귀함수 이용한 5!</h2>");	
+	function fac(n){
+		if (n==1) return 1;
+		else 
+			return n * fac(n-1);
+	}
+	
+	document.write(fac(5), "<br>");
+	
+	(function() {
+		alert("바로 수행");
+	}());
+</script>
+</head>
+<body>
+
+</body>
+</html>
