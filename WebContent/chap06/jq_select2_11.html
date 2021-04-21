@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+<script>
+	$(function(){
+		
+		$("#wrap a[href^=https]").css({"color":"red"});
+		
+		$("#wrap a[target]").css({"color":"green"});
+		
+		$("#wrap a[href$=net]").css({"color":"blue"});
+		
+		$("#wrap a[href*=google]").css({"color":"yellow"});
+		
+		$("#member_f :text").css({"background-color":"gray"});
+		
+		$("#member_f :password").css({"background-color":"orange"});
+	});
+</script>
+</head>
+<body>
+	<div id="wrap">
+		<p>
+			<a href="https://easypub.co.kr" target="_blank">EasyPub</a>
+		</p>
+	</div>
+	<div id="wrap">
+		<p>
+			<a href="https://naver.com">Naver</a>
+		</p>
+	</div>
+	<div id="wrap">
+		<p>
+			<a href="https://google.co.kr">Google</a>
+		</p>
+	</div>
+	<div id="wrap">
+		<p>
+			<a href="https://daum.net">Daum</a>
+		</p>
+	</div>
+	<form action="#" method="get" id="member_f">
+		<p>
+			<label for="user_id">아이디</label>
+			<input type="text" name="user_id" id ="user_id">
+		</p>
+		<p>
+			<label for="user_pw">비밀번호</label>
+			<input type="password" name="user_pw" id ="user_pw">
+		</p>
+	</form>
+</body>
+</html>

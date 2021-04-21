@@ -13,5 +13,14 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="D:/lib/activation-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/lib/cos-05Nov2002.jar"/>
+	<classpathentry kind="lib" path="D:/lib/jai_codec.jar"/>
+	<classpathentry kind="lib" path="D:/lib/jai_core.jar"/>
+	<classpathentry kind="lib" path="D:/lib/javax.mail-1.6.2.jar"/>
+	<classpathentry kind="lib" path="D:/lib/mysql-connector-java-5.1.49.jar"/>
+	<classpathentry kind="lib" path="D:/lib/taglibs-standard-impl-1.2.5.jar"/>
+	<classpathentry kind="lib" path="D:/lib/taglibs-standard-jstlel-1.2.5.jar"/>
+	<classpathentry kind="lib" path="D:/lib/taglibs-standard-spec-1.2.5.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
