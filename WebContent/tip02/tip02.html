@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>탭 메뉴</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+<script>
+$(function(){
+	$(".btn li").click(function(){
+		$(this).addClass("active");
+		$(this).siblings().removeClass("active");
+		
+		/* var tab = $(this).attr("data-alt"); */
+		/* alert(tab); */
+		/* $(".tabs div").removeClass("active");
+		$("#"+tab).addClass("active"); */
+		
+		$(".tabs div").removeClass("active");
+		$(".tabs div").eq($(this).index()).addClass("active");		
+	});
+});
+</script>
+</head>
+<body>
+	<section>
+		<div class="heading">
+			<h1><span>웹개발자</span>, 탭 메뉴 Tip & Tech</h1>
+			<input type="text" placeholder="What are you looking for?">
+		</div>
+		<div class="tab-inner">
+			<ul class="btn">
+				<li class="active">HTML5</li>
+				<li>CSS3</li>
+				<li>JQUERY</li>
+				<li>JAVASCRIPT</li>
+				<li>CSS FRAMEWORKS</li>
+			</ul>
+			
+			<div class="tabs">
+				<div class="active">
+					<h2>HTML5</h2>
+					<img alt="" src="images/platform-logo-01.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas quis. Turpis egestas maecenas pharetra convallis. Nulla aliquet porttitor lacus luctus accumsan tortor. Et magnis dis parturient montes nascetur ridiculus mus mauris. Adipiscing elit duis tristique sollicitudin nibh. Amet mauris commodo quis imperdiet massa. Scelerisque purus semper eget duis at. Nisl purus in mollis nunc sed id semper. Sed risus ultricies tristique nulla aliquet enim. Morbi tincidunt ornare massa eget egestas. Quis risus sed vulputate odio. Pretium aenean pharetra magna ac placerat vestibulum lectus. Mauris a diam maecenas sed enim ut sem viverra aliquet. Auctor augue mauris augue neque gravida in fermentum. At imperdiet dui accumsan sit. Elit pellentesque habitant morbi tristique senectus. Potenti nullam ac tortor vitae purus faucibus. Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Consectetur libero id faucibus nisl tincidunt eget nullam non.</p>
+				</div>
+				<div>
+					<h2>CSS3</h2>
+					<img alt="" src="images/platform-logo-02.png">
+					<p>Ut eu sem integer vitae justo eget. Quam quisque id diam vel quam elementum pulvinar. Purus in massa tempor nec feugiat. Amet porttitor eget dolor morbi non arcu risus quis varius. Varius quam quisque id diam vel quam elementum. Feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Viverra nibh cras pulvinar mattis nunc sed. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Posuere sollicitudin aliquam ultrices sagittis. Donec ultrices tincidunt arcu non sodales neque. Purus viverra accumsan in nisl nisi scelerisque. Gravida quis blandit turpis cursus in hac habitasse platea. Adipiscing vitae proin sagittis nisl. Dui nunc mattis enim ut tellus elementum sagittis vitae et. Fringilla phasellus faucibus scelerisque eleifend donec. Et malesuada fames ac turpis egestas maecenas pharetra. Nulla facilisi morbi tempus iaculis urna id. Nulla aliquet enim tortor at auctor urna nunc id cursus.</p>
+				</div>
+				<div>
+					<h2>JQUERY</h2>
+					<img alt="" src="images/platform-logo-03.png">
+					<p>Sit amet luctus venenatis lectus magna. Diam sit amet nisl suscipit adipiscing. Ipsum consequat nisl vel pretium lectus quam. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Diam ut venenatis tellus in metus vulputate. Proin nibh nisl condimentum id venenatis a condimentum. Est sit amet facilisis magna. Eget gravida cum sociis natoque. Pulvinar mattis nunc sed blandit libero. Natoque penatibus et magnis dis parturient. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et.</p>
+				</div>
+				<div>
+					<h2>JAVASCRIPT</h2>
+					<img alt="" src="images/platform-logo-04.png">
+					<p>Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam erat. Tristique sollicitudin nibh sit amet commodo. Nisl nunc mi ipsum faucibus. Mattis rhoncus urna neque viverra justo nec ultrices dui. In fermentum et sollicitudin ac orci phasellus. Mi quis hendrerit dolor magna eget est lorem ipsum dolor. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Senectus et netus et malesuada. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Quisque id diam vel quam elementum pulvinar etiam non quam. Purus sit amet luctus venenatis lectus magna. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo.</p>
+				</div>
+				<div>
+					<h2>CSS FRAMEWORKS</h2>
+					<img alt="" src="images/platform-logo-05.png">
+					<p>Venenatis cras sed felis eget velit aliquet. Laoreet non curabitur gravida arcu ac tortor dignissim. Laoreet non curabitur gravida arcu ac tortor dignissim convallis. Tellus integer feugiat scelerisque varius morbi enim nunc. Accumsan lacus vel facilisis volutpat est. Aliquet nibh praesent tristique magna sit. A cras semper auctor neque vitae tempus quam pellentesque. Tincidunt arcu non sodales neque. Turpis egestas pretium aenean pharetra magna. Posuere ac ut consequat semper viverra. Nisl pretium fusce id velit ut tortor pretium. Risus pretium quam vulputate dignissim suspendisse. Egestas diam in arcu cursus euismod quis viverra nibh cras. Sed vulputate odio ut enim blandit volutpat maecenas volutpat. Eu facilisis sed odio morbi quis commodo. Fusce id velit ut tortor. Malesuada pellentesque elit eget gravida. Arcu odio ut sem nulla pharetra diam sit.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
