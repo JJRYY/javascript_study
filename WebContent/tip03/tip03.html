@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+<link rel="stylesheet" href="css/style.css">
+<script>
+	$(function(){
+		/* $('.navi li').mouseenter(function(){
+			var changeImg = $(this).attr("data-image");
+			$(".photo").css({
+				'background-image' : 'url(' + changeImg + ')'
+			});
+		}); */
+		
+		$('.navi li').on("mouseenter focusin", function(){
+			/* var changeImg = $(this).attr("data-image"); */
+			var idx = $(".navi li").index(this) + 1;
+			var changeImg = "images/portrait-0" + idx + ".jpg";
+			$(".photo").css({
+				'background-image' : 'url(' + changeImg + ')'
+			});
+		});
+		
+		$('.navi li').on("mouseleave focusout", function(){
+			$(".photo").css({
+				'background-image' : ''
+			});
+		});
+	});
+</script>
+</head>
+<body>
+	<div class="container">
+		<ul class="navi">
+			<li data-image="images/portrait-01.jpg"><a href="#none" data-text="ABOUT">ABOUT</a></li>
+			<li data-image="images/portrait-02.jpg"><a href="#none" data-text="INSTRUCTOR">INSTRUCTOR</a></li>
+			<li data-image="images/portrait-03.jpg"><a href="#none" data-text="CLASS">CLASS</a></li>
+			<li data-image="images/portrait-04.jpg"><a href="#none" data-text="LOCATION">LOCATION</a></li>
+		</ul>
+		<div class="photo"></div>
+	</div>
+</body>
+</html>
